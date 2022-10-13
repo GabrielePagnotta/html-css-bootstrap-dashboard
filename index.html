@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./assets/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Document</title>.
+    <title>Document</title>
 </head>
 <body>
-    <header class="d-flex justify-content-around h">
+    <header class="d-flex h">
         <div class="container-fluid">
             <div class="row align-items-center">
                 <div class="col-2">
@@ -29,41 +29,26 @@
                       </div>
                 </div>
                 <div class="col-2 bg-warning">
-                    <nav class="navbar navbar-expand-lg ">
-                        <div class="container-fluid d-flex align-items-center">
-                            <i class="bi bi-list-ul p-3 d-lg-inline-block d-sm-none"></i>
-                          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                              <li class="nav-item d-flex align-items-center">
-                                <i class="bi bi-question-circle-fill m-2 d-lg-inline-block d-none"></i>
-                              </li>
-                              <li class="nav-item d-flex align-items-center">
-                                <i class="bi bi-three-dots-vertical m-2 d-lg-inline-block d-none"></i>
-                              </li>
-                              <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <i class="bi bi-bell-fill p-1 d-lg-inline-block"></i>
-                                </a>
-                                <ul class="dropdown-menu">
-                                  <li><a class="dropdown-item" href="#">Profilo</a></li>
-                                  <li><a class="dropdown-item" href="#">Fatturazione</a></li>
-                                  <li><hr class="dropdown-divider"></li>
-                                  <li><a class="dropdown-item" href="#">Logout</a></li>
-                                </ul>
-                              </li>
-                              
-                            </ul>
-                            
-                          </div>
-                        </div>
-                      </nav>               
+                  <i class="fa-solid d-none d-md-inline-block fa-list fs-5 px-1 py-4"></i>
+                  <i class="fa-solid d-none d-md-inline-block fa-circle-question fs-5 px-1 py-4"></i>
+                  <i class="fa-solid d-none d-md-inline-block fa-ellipsis-vertical fs-5 px-1 py-4"></i>
+                  <div class="btn-group">
+                    <button type="button" class="btn" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fa-solid fa-bell fs-5"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                      <li><button class="dropdown-item" type="button">Action</button></li>
+                      <li><button class="dropdown-item" type="button">Another action</button></li>
+                      <li><button class="dropdown-item" type="button">Something else here</button></li>
+                    </ul>
+                  </div>
                 </div>
             </div>
         </div>       
     </header>
     <main class="container-fluid">
         <div class="row wh">
-            <div class="col-1 col-md-2 bg-sidebar">
+            <div class="col-1 col-md-1 bg-sidebar">
                 <div>
                 <i class="bi bi-house-door-fill white fs-4 py-2"></i>
                 <span class="white d-none d-md-inline-block">Home</span>
@@ -78,17 +63,134 @@
             </div>
             </div>
             <div class="col-11 col-md-10 bg-primary">
+              <div class="container-fluid px-0 py-3 bg-primary">
+                <div class="row">
+                  <div class="col-12 col-md-8">
+                    <span class="fs-2 white">Boolean</span>
+                    <span class="badge text-bg-dark">Dark</span>
+                    <br>
+                    <span class="badge text-bg-dark">3 app</span>
+                    <span class="white">>></span>
+                    <span class="badge text-bg-dark">Boolean blog app</span>
+                    <span class="badge text-bg-dark">Boolean blog app</span>
+                    <span class="badge text-bg-dark">Boolean blog app</span>
+
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <p class="white pt-3">Studenti online negli ultimi 30 minuti</p>
+                    <p class="fs-2 white">125</p>
+                  </div>
+                </div>
+              </div>
                 <div class="container-fluid px-0">
                     <div class="row">
-                        <div class="col-sm-12 col-md-6 bg-danger">
+                        <div class="col-12 col-md-8">
                             <div class="card mt-3">
                                 <div class="card-header">
-                                  Featured
+                                  <div class="container">
+                                    <div class="row">
+                                      <div class="col-9">
+                                        <span class="fs-2">Prossime classi</span>
+                                      </div>
+                                      <div class="col-3 d-flex justify-content-end">
+                                        <button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                                            <i class="fa-solid fa-plus text-primary border-primary border"></i>    
+                                        </button>  
+                                        <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+                                          <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title" id="staticBackdropLabel">Offcanvas</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                          </div>
+                                          <div class="offcanvas-body">
+                                            <div>
+                                              I will not close if you click outside of me.
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>                        
                                 </div>
                                 <div class="card-body">
-                                  <h5 class="card-title">Special title treatment</h5>
-                                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                                  <table class="table">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">Nome</th>
+                                        <th scope="col">Data inizio</th>
+                                        <th scope="col">ROI</th>
+                                        <th scope="col">Stato</th>
+                                        <th scope="col">Azioni</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody class="table-group-divider">
+                                      <tr>
+                                        <th scope="row">
+                                          <img class="imaget" src="./assets/risorse/img/class-avatar.jpg" alt="">
+                                          <span class="fw-normal">Classe 75</span>
+                                        </th>
+                                        <td>15 Feb 2022</td>
+                                        <td>Otto</td>
+                                        <td>@mdo</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">
+                                          <img class="imaget" src="./assets/risorse/img/class-avatar.jpg" alt="">
+                                          <span class="fw-normal">Classe 76</span>
+                                        </th>
+                                        <td>16 Feb 2022</td>
+                                        <td>Thornton</td>
+                                        <td>@fat</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">
+                                          <img class="imaget" src="./assets/risorse/img/class-avatar.jpg" alt="">
+                                          <span class="fw-normal">Classe 77</span>
+                                        </th>
+                                        <td colspan="2">17 Feb 2022</td>
+                                        <td>@twitter</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">
+                                          <img class="imaget" src="./assets/risorse/img/class-avatar.jpg" alt="">
+                                          <span class="fw-normal">Classe 78</span>
+                                        </th>
+                                        <td colspan="2">18 Feb 2022</td>
+                                        <td>@twitter</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">
+                                          <img class="imaget" src="./assets/risorse/img/class-avatar.jpg" alt="">
+                                          <span class="fw-normal">Classe 79</span>
+                                        </th>
+                                        <td colspan="2">19 Feb 2022</td>
+                                        <td>@twitter</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">
+                                          <img class="imaget" src="./assets/risorse/img/class-avatar.jpg" alt="">
+                                          <span class="fw-normal">Classe 80</span>
+                                        </th>
+                                        <td colspan="2">20 Feb 2022</td>
+                                        <td>@twitter</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">
+                                          <img class="imaget" src="./assets/risorse/img/class-avatar.jpg" alt="">
+                                          <span class="fw-normal">Classe 81</span>
+                                        </th>
+                                        <td colspan="2">21 Feb 2022</td>
+                                        <td>@twitter</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">
+                                          <img class="imaget" src="./assets/risorse/img/class-avatar.jpg" alt="">
+                                          <span class="fw-normal">Classe 82</span>
+                                        </th>
+                                        <td colspan="2">22 Feb 2022</td>
+                                        <td>@twitter</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
                                 </div>
                               </div>
                               <div class="card my-3">
@@ -112,7 +214,7 @@
                                 </div>
                               </div>
                         </div>
-                        <div class="col-sm-12 col-md-6 bg-warning">
+                        <div class="col-sm-12 col-md-4 bg-warning">
                             <div class="card">c</div>
                         </div>
                     </div>

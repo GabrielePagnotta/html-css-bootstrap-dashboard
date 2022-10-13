@@ -7,7 +7,7 @@
 }
 
 .ww{
-    width:100vw;.
+    width:100vw;
 }
 
 
@@ -27,10 +27,16 @@ main{
     background-color: #E9ECEF;
 }
 
-.bi-bell-fill{
+.fa-bell{
     color:#D17C23;
+}
+
+.bg-white{
     background-color: white;
-    
+}
+
+.text-bg-dark{
+    background-color: rgba(33, 37, 41, 0.5)
 }
 
 .dropdown-toggle:after{
@@ -47,6 +53,17 @@ main{
 .white{
     color: white;
 }
+
+.fa-plus{
+    font-size: 20px;
+    padding:10px;
+}
+
+.imaget{
+    width:7%;
+}
+
+font
 
 
 
