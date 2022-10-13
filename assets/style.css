@@ -1,0 +1,52 @@
+*{
+    margin:0;
+}
+
+.wh{
+    height:100vh;
+}
+
+.ww{
+    width:100vw;
+}
+
+
+.widt{
+    width:100%;
+}
+
+main{
+    height:calc(100vh - 70px);
+}
+
+.h{
+    height:70px;
+}
+
+.bg-bar{
+    background-color: #E9ECEF;
+}
+
+.bi-bell-fill{
+    color:#D17C23;
+    background-color: white;
+    
+}
+
+.dropdown-toggle:after{
+    display: none;
+}
+
+.bg-sidebar{
+    background-image: url(./risorse/img/sidebar-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #0f263c;
+}
+
+.white{
+    color: white;
+}
+
+
+
