@@ -1,404 +1,470 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./assets/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Document</title>
-</head>
-<body>
-    <header class="d-flex h">
-        <div class="container-fluid">
-            <div class="row align-items-center">
-                <div class="col-2">
-                    <img class="img-fluid d-none d-md-inline-block py-3" src="./assets/risorse/img/logo.svg" alt="">
-                    <img class="img-fluid d-inline-block d-md-none" src="./assets/risorse/img/mobile-logo.png" alt="">
-                </div>
-                <div class="col-8 py-3">
-                    <div class="input-group">
-                        <span class="input-group-text" id="basic-addon1">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
-          </svg>
-                        </span>
-                        <input type="text" class="form-control bg-bar" placeholder="Input group example" aria-label="Input group example" aria-describedby="basic-addon1">
-                      </div>
-                </div>
-                <div class="col-2">
-                  <i class="fa-solid d-none d-md-inline-block fa-list fs-5 px-2 py-4"></i>
-                  <i class="fa-solid d-none d-md-inline-block fa-circle-question px-2 fs-5 px-1 py-4"></i>
-                  <i class="fa-solid d-none d-md-inline-block fa-ellipsis-vertical px-2 fs-5 px-1 py-4"></i>
-                  <div class="btn-group">
-                    <button type="button" class="btn" data-bs-toggle="dropdown" aria-expanded="false">
-                      <i class="fa-solid fa-bell fs-5"></i>
-                    </button>
-                    <ul class="dropdown-menu dropdown-menu-end">
-                      <li><button class="dropdown-item" type="button">Action</button></li>
-                      <li><button class="dropdown-item" type="button">Another action</button></li>
-                      <li><button class="dropdown-item" type="button">Something else here</button></li>
-                    </ul>
-                  </div>
-                </div>
-            </div>
-        </div>       
-    </header>
-    <main class="container-fluid">
-        <div class="row wh">
-            <div class="col-1 col-md-1 bg-sidebar">
-                <div>
-                <i class="bi bi-house-door-fill white fs-4 py-2"></i>
-                <span class="white d-none d-md-inline-block">Home</span>
-            </div>
-                <div>
-                <i class="fa-solid fa-chart-simple white fs-4 py-2"></i>
-                <span class="white d-none d-md-inline-block">Stats</span>
-            </div>
-            <div>
-                <i class="fa-solid fa-signal white fs-5 py-2"></i>
-                <span class="white d-none d-md-inline-block">Signals</span>
-            </div>
-            </div>
-            <div class="col-11 col-md-11 px-0">
-              <div class="container-fluid  bg-primary">
-                <div class="row">
-                  <div class="col-12 col-md-8">
-                    <span class="fs-2 white">Boolean</span>
-                    <span class="badge text-bg-dark">Dark</span>
-                    <br>
-                    <span class="badge text-bg-dark">3 app</span>
-                    <span class="white">>></span>
-                    <span class="badge text-bg-dark">Boolean blog app</span>
-                    <span class="badge text-bg-dark">Boolean blog app</span>
-                    <span class="badge text-bg-dark">Boolean blog app</span>
 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./assets/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="d-flex h">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-2">
+          <img class="img-fluid d-none d-md-inline-block py-3" src="./assets/risorse/img/logo.svg" alt="">
+          <img class="img-fluid d-inline-block d-md-none" src="./assets/risorse/img/mobile-logo.png" alt="">
+        </div>
+        <div class="col-8 py-3">
+          <div class="input-group">
+            <span class="input-group-text" id="basic-addon1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+                viewBox="0 0 16 16">
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z">
+                </path>
+              </svg>
+            </span>
+            <input type="text" class="form-control bg-bar" placeholder="Input group example"
+              aria-label="Input group example" aria-describedby="basic-addon1">
+          </div>
+        </div>
+        <div class="col-2">
+          <i class="fa-solid d-none d-md-inline-block fa-list fs-5 px-2 py-4"></i>
+          <i class="fa-solid d-none d-md-inline-block fa-circle-question px-2 fs-5 px-1 py-4"></i>
+          <i class="fa-solid d-none d-md-inline-block fa-ellipsis-vertical px-2 fs-5 px-1 py-4"></i>
+          <div class="btn-group">
+            <button type="button" class="btn" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-solid fa-bell fs-5"></i>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><button class="dropdown-item" type="button">Action</button></li>
+              <li><button class="dropdown-item" type="button">Another action</button></li>
+              <li><button class="dropdown-item" type="button">Something else here</button></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="container-fluid">
+    <div class="row wh">
+
+      <!-- SIDEBAR -->
+      <div class="col-1 col-md-1 bg-sidebar d-flex flex-column justify-content-between">
+       <div class="flex-start">
+        <ul class="px-2">
+          <li class="list-none">
+            <i class="bi bi-house-door-fill white fs-4 py-2"></i>
+            <span class="white d-none d-md-inline-block">Home</span>
+          </li>
+          <li class="list-none">
+            <i class="fa-solid fa-chart-simple white fs-4 py-2"></i>
+            <span class="white d-none d-md-inline-block">Stats</span>
+          </li>
+          <li class="list-none">
+            <i class="fa-solid fa-signal white fs-5 py-2"></i>
+            <span class="white d-none d-md-inline-block">Signals</span>
+          </li>
+        </ul>
+       </div>
+       <div>
+        <ul class="px-2">
+          <li class="list-none">
+            <i class="fa-solid fa-gear white fs-5 py-2"></i>
+            <span class="white d-none d-md-inline-block">Admin</span>
+          </li>
+        </ul>
+       </div>
+      </div>
+
+      <!-- CONTENT CONTAINER -->
+      <div class="col-11 col-md-11 px-0">
+        <div class="container-fluid  bg-primary">
+          <div class="row">
+            <div class="col-12 col-md-8">
+              <span class="fs-2 white">Boolean</span>
+              <span class="badge text-bg-dark">Dark</span>
+              <br>
+              <span class="badge text-bg-dark">3 app</span>
+              <span class="white">>></span>
+              <span class="badge text-bg-dark">Boolean blog app</span>
+              <span class="badge text-bg-dark">Boolean blog app</span>
+              <span class="badge text-bg-dark">Boolean blog app</span>
+
+            </div>
+            <div class="col-12 col-md-4">
+              <p class="white pt-3">Studenti online negli ultimi 30 minuti</p>
+              <p class="fs-2 white">125</p>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid px-0">
+          <div class="row">
+            <div class="col-12 col-md-8">
+              <div class="card mt-3">
+                <div class="card-header">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-9">
+                        <span class="fs-2">Prossime classi</span>
+                      </div>
+                      <div class="col-3 d-flex justify-content-end">
+                        <button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
+                          aria-controls="staticBackdrop">
+                          <i class="fa-solid fa-plus text-primary border-primary border"></i>
+                        </button>
+                        <div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1"
+                          id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+                          <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="staticBackdropLabel">Offcanvas</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                              aria-label="Close"></button>
+                          </div>
+                          <div class="offcanvas-body">
+                            <div class="mb-3">
+                              <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="col-12 col-md-4">
-                    <p class="white pt-3">Studenti online negli ultimi 30 minuti</p>
-                    <p class="fs-2 white">125</p>
+                </div>
+                <div class="card-body">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th class="name" scope="col">Nome</th>
+                        <th scope="col">Data inizio</th>
+                        <th scope="col">ROI</th>
+                        <th scope="col">Stato</th>
+                        <th scope="col">Azioni</th>
+                      </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                      <tr>
+                        <th scope="row">
+                          <img class="imaget" src="./assets/risorse/img/class-avatar.jpg" alt="">
+                          <span class="fw-normal">Classe 75</span>
+                        </th>
+                        <td>15 Feb 2022</td>
+                        <td>20%</td>
+                        <td>
+                          <span class="badge text-bg-success">Done</span>
+                        </td>
+                        <td>
+                          <button type="button" class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-pencil"></i>
+                          </button>
+                          <button type="button" class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-trash"></i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <img class="imaget" src="./assets/risorse/img/class-avatar.jpg" alt="">
+                          <span class="fw-normal">Classe 76</span>
+                        </th>
+                        <td>16 Feb 2022</td>
+                        <td>20%</td>
+                        <td>
+                          <span class="badge text-bg-success">Done</span>
+                        </td>
+                        <td>
+                          <button type="button" class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-pencil"></i>
+                          </button>
+                          <button type="button" class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-trash"></i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <img class="imaget" src="./assets/risorse/img/class-avatar.jpg" alt="">
+                          <span class="fw-normal">Classe 77</span>
+                        </th>
+                        <td>17 Feb 2022</td>
+                        <td>20%</td>
+                        <td>
+                          <span class="badge text-bg-warning text-white">process</span>
+                        </td>
+                        <td>
+                          <button type="button" class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-pencil"></i>
+                          </button>
+                          <button type="button" class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-trash"></i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <img class="imaget" src="./assets/risorse/img/class-avatar.jpg" alt="">
+                          <span class="fw-normal">Classe 78</span>
+                        </th>
+                        <td>18 Feb 2022</td>
+                        <td>20%</td>
+                        <td>
+                          <span class="badge text-bg-success">Done</span>
+                        </td>
+                        <td>
+                          <button type="button" class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-pencil"></i>
+                          </button>
+                          <button type="button" class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-trash"></i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <img class="imaget" src="./assets/risorse/img/class-avatar.jpg" alt="">
+                          <span class="fw-normal">Classe 79</span>
+                        </th>
+                        <td>19 Feb 2022</td>
+                        <td>20%</td>
+                        <td>
+                          <span class="badge text-bg-danger">failed</span>
+
+                        </td>
+                        <td>
+                          <button type="button" class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-pencil"></i>
+                          </button>
+                          <button type="button" class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-trash"></i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <img class="imaget" src="./assets/risorse/img/class-avatar.jpg" alt="">
+                          <span class="fw-normal">Classe 80</span>
+                        </th>
+                        <td>20 Feb 2022</td>
+                        <td>20%</td>
+                        <td>
+                          <span class="badge text-bg-success">Done</span>
+                        </td>
+                        <td>
+                          <button type="button" class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-pencil"></i>
+                          </button>
+                          <button type="button" class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-trash"></i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <img class="imaget" src="./assets/risorse/img/class-avatar.jpg" alt="">
+                          <span class="fw-normal">Classe 81</span>
+                        </th>
+                        <td>21 Feb 2022</td>
+                        <td>20%</td>
+                        <td>
+                          <span class="badge text-bg-danger">failed</span>
+
+                        </td>
+                        <td>
+                          <button type="button" class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-pencil"></i>
+                          </button>
+                          <button type="button" class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-trash"></i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <img class="imaget" src="./assets/risorse/img/class-avatar.jpg" alt="">
+                          <span class="fw-normal">Classe 82</span>
+                        </th>
+                        <td>22 Feb 2022</td>
+                        <td>20%</td>
+                        <td>
+                          <span class="badge text-bg-success">Done</span>
+                        </td>
+                        <td>
+                          <button type="button" class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-pencil"></i>
+                          </button>
+                          <button type="button" class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-trash"></i>
+                          </button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="card my-3">
+                <div class="card-header">
+                  <p class="fs-3">F.A.Q.</p>
+                </div>
+                <div class="card-body">
+                  <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                          aria-controls="panelsStayOpen-collapseOne">
+                          Come aggiungere una nuova classe?
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                        aria-labelledby="panelsStayOpen-headingOne">
+                        <div class="accordion-body">
+                          <strong>This is the first item's accordion body.</strong> It is shown by default, until the
+                          collapse plugin adds the appropriate classes that we use to style each element. These classes
+                          control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                          modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                          that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                          does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                          aria-controls="panelsStayOpen-collapseTwo">
+                          Come posso accedere alle informazioni del mio account?
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingTwo">
+                        <div class="accordion-body">
+                          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the
+                          collapse plugin adds the appropriate classes that we use to style each element. These classes
+                          control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                          modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                          that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                          does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                          aria-controls="panelsStayOpen-collapseThree">
+                          Posso usare questa dashboard da mobile?
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingThree">
+                        <div class="accordion-body">
+                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                          collapse plugin adds the appropriate classes that we use to style each element. These classes
+                          control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                          modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                          that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                          does limit overflow.
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-                <div class="container-fluid px-0">
-                    <div class="row">
-                        <div class="col-12 col-md-8">
-                            <div class="card mt-3">
-                                <div class="card-header">
-                                  <div class="container">
-                                    <div class="row">
-                                      <div class="col-9">
-                                        <span class="fs-2">Prossime classi</span>
-                                      </div>
-                                      <div class="col-3 d-flex justify-content-end">
-                                        <button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
-                                            <i class="fa-solid fa-plus text-primary border-primary border"></i>    
-                                        </button>  
-                                        <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
-                                          <div class="offcanvas-header">
-                                            <h5 class="offcanvas-title" id="staticBackdropLabel">Offcanvas</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                                          </div>
-                                          <div class="offcanvas-body">
-                                            <div>
-                                              I will not close if you click outside of me.
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>                        
-                                </div>
-                                <div class="card-body">
-                                  <table class="table">
-                                    <thead>
-                                      <tr>
-                                        <th class="name" scope="col">Nome</th>
-                                        <th scope="col">Data inizio</th>
-                                        <th scope="col">ROI</th>
-                                        <th scope="col">Stato</th>
-                                        <th scope="col">Azioni</th>
-                                      </tr>
-                                    </thead>
-                                    <tbody class="table-group-divider">
-                                      <tr>
-                                        <th scope="row">
-                                          <img class="imaget" src="./assets/risorse/img/class-avatar.jpg" alt="">
-                                          <span class="fw-normal">Classe 75</span>
-                                        </th>
-                                        <td>15 Feb 2022</td>
-                                        <td>20%</td>
-                                        <td>
-                                          <span class="badge text-bg-success">Done</span>
-                                        </td>
-                                        <td>
-                                          <button type="button" class="btn btn-outline-secondary">
-                                            <i class="fa-solid fa-pencil"></i>
-                                          </button>
-                                          <button type="button" class="btn btn-outline-secondary">
-                                            <i class="fa-solid fa-trash"></i>
-                                          </button> 
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">
-                                          <img class="imaget" src="./assets/risorse/img/class-avatar.jpg" alt="">
-                                          <span class="fw-normal">Classe 76</span>
-                                        </th>
-                                        <td>16 Feb 2022</td>
-                                        <td>20%</td>
-                                        <td>
-                                          <span class="badge text-bg-success">Done</span>
-                                        </td>
-                                        <td>
-                                          <button type="button" class="btn btn-outline-secondary">
-                                            <i class="fa-solid fa-pencil"></i>
-                                          </button>
-                                          <button type="button" class="btn btn-outline-secondary">
-                                            <i class="fa-solid fa-trash"></i>
-                                          </button> 
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">
-                                          <img class="imaget" src="./assets/risorse/img/class-avatar.jpg" alt="">
-                                          <span class="fw-normal">Classe 77</span>
-                                        </th>
-                                        <td>17 Feb 2022</td>
-                                        <td>20%</td>
-                                        <td>
-                                          <span class="badge text-bg-warning text-white">process</span>
-                                        </td>
-                                        <td>
-                                          <button type="button" class="btn btn-outline-secondary">
-                                            <i class="fa-solid fa-pencil"></i>
-                                          </button>
-                                          <button type="button" class="btn btn-outline-secondary">
-                                            <i class="fa-solid fa-trash"></i>
-                                          </button> 
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">
-                                          <img class="imaget" src="./assets/risorse/img/class-avatar.jpg" alt="">
-                                          <span class="fw-normal">Classe 78</span>
-                                        </th>
-                                        <td>18 Feb 2022</td>
-                                        <td>20%</td>
-                                        <td>
-                                          <span class="badge text-bg-success">Done</span>
-                                        </td>
-                                        <td>
-                                          <button type="button" class="btn btn-outline-secondary">
-                                            <i class="fa-solid fa-pencil"></i>
-                                          </button>
-                                          <button type="button" class="btn btn-outline-secondary">
-                                            <i class="fa-solid fa-trash"></i>
-                                          </button> 
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">
-                                          <img class="imaget" src="./assets/risorse/img/class-avatar.jpg" alt="">
-                                          <span class="fw-normal">Classe 79</span>
-                                        </th>
-                                        <td>19 Feb 2022</td>
-                                        <td>20%</td>
-                                        <td>
-                                          <span class="badge text-bg-danger">failed</span>
 
-                                        </td>
-                                        <td>
-                                          <button type="button" class="btn btn-outline-secondary">
-                                            <i class="fa-solid fa-pencil"></i>
-                                          </button>
-                                          <button type="button" class="btn btn-outline-secondary">
-                                            <i class="fa-solid fa-trash"></i>
-                                          </button> 
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">
-                                          <img class="imaget" src="./assets/risorse/img/class-avatar.jpg" alt="">
-                                          <span class="fw-normal">Classe 80</span>
-                                        </th>
-                                        <td>20 Feb 2022</td>
-                                        <td>20%</td>
-                                        <td>
-                                          <span class="badge text-bg-success">Done</span>
-                                        </td>
-                                        <td>
-                                          <button type="button" class="btn btn-outline-secondary">
-                                            <i class="fa-solid fa-pencil"></i>
-                                          </button>
-                                          <button type="button" class="btn btn-outline-secondary">
-                                            <i class="fa-solid fa-trash"></i>
-                                          </button> 
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">
-                                          <img class="imaget" src="./assets/risorse/img/class-avatar.jpg" alt="">
-                                          <span class="fw-normal">Classe 81</span>
-                                        </th>
-                                        <td>21 Feb 2022</td>
-                                        <td>20%</td>
-                                        <td>
-                                          <span class="badge text-bg-danger">failed</span>
-
-                                        </td>
-                                         <td>
-                                          <button type="button" class="btn btn-outline-secondary">
-                                            <i class="fa-solid fa-pencil"></i>
-                                          </button>
-                                          <button type="button" class="btn btn-outline-secondary">
-                                            <i class="fa-solid fa-trash"></i>
-                                          </button> 
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">
-                                          <img class="imaget" src="./assets/risorse/img/class-avatar.jpg" alt="">
-                                          <span class="fw-normal">Classe 82</span>
-                                        </th>
-                                        <td>22 Feb 2022</td>
-                                        <td>20%</td>
-                                        <td>
-                                          <span class="badge text-bg-success">Done</span>
-                                        </td>
-                                        <td>
-                                          <button type="button" class="btn btn-outline-secondary">
-                                            <i class="fa-solid fa-pencil"></i>
-                                          </button>
-                                          <button type="button" class="btn btn-outline-secondary">
-                                            <i class="fa-solid fa-trash"></i>
-                                          </button> 
-                                        </td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                </div>
-                              </div>
-                              <div class="card my-3">
-                                <div class="card-header">
-                                  <p class="fs-3">F.A.Q.</p>
-                                </div>
-                                <div class="card-body">
-                                  <div class="accordion" id="accordionPanelsStayOpenExample">
-                                    <div class="accordion-item">
-                                      <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                                          Come aggiungere una nuova classe?
-                                        </button>
-                                      </h2>
-                                      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
-                                        <div class="accordion-body">
-                                          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                      <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                                          Come posso accedere alle informazioni del mio account?
-                                        </button>
-                                      </h2>
-                                      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
-                                        <div class="accordion-body">
-                                          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                      <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                                          Posso usare questa dashboard da mobile?
-                                        </button>
-                                      </h2>
-                                      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
-                                        <div class="accordion-body">
-                                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              
-                        </div>
-                        <div class="col-12 col-md-4 py-3">
-                          <div class="card">
-                            <div class="card-header fs-2">
-                              Todo
-                            </div>
-                            <div class="card-body">
-                              <div class="card" style="width: 100%;">
-                                <ul class="list-group list-group-flush">
-                                  <li class="list-group-item">
-                                    <div class="form-check">
-                                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                      <label class="form-check-label" for="flexCheckDefault">
-                                        Kick off nuove classi
-                                      </label>
-                                    </div>
-                                  </li>
-                                  <li class="list-group-item">
-                                    <div class="form-check">
-                                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                      <label class="form-check-label" for="flexCheckDefault">
-                                        Lezione di Bootstrap 5 in classe #77
-                                      </label>
-                                    </div>
-                                  </li>
-                                  <li class="list-group-item">
-                                    <div class="form-check">
-                                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                      <label class="form-check-label" for="flexCheckDefault">
-                                        Controllare username Github studenti
-                                      </label>
-                                    </div>
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="card p-3">
-                          <div class="card" style="width: 27rem;">
-                            <ul class="list-group list-group-flush">
-                              <li class="list-group-item">
-                                <img class="img-fluid" src="./assets/risorse/img/chart.jpg" alt="">
-                                <p class="fs-3">Utenti attivi</p>
-                                <p>Lista degli utenti attivi in piattaforma dell'ultimo  mese</p>
-                              </li>
-                              <li class="list-group-item">
-                                Gennaio:1200
-                              </li>
-                              <li class="list-group-item">
-                                Febbraio:800
-                              </li>
-                              <li class="list-group-item">
-                                Marzo:1500
-                              </li>
-                              <li class="list-group-item p-3">
-                                <a href="#">Visualizza report approfondito</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                        </div>
-                    </div>
-                </div>
             </div>
+            <div class="col-12 col-md-4 py-3">
+              <div class="card">
+                <div class="card-header fs-2">
+                  Todo
+                </div>
+                <div class="card-body">
+                  <div class="card" style="width: 100%;">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                            Kick off nuove classi
+                          </label>
+                        </div>
+                      </li>
+                      <li class="list-group-item">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                            Lezione di Bootstrap 5 in classe #77
+                          </label>
+                        </div>
+                      </li>
+                      <li class="list-group-item">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                            Controllare username Github studenti
+                          </label>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="card mt-3 p-3">
+                <div class="card" style="width: 27rem;">
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                      <img class="img-fluid" src="./assets/risorse/img/chart.jpg" alt="">
+                      <p class="fs-3">Utenti attivi</p>
+                      <p>Lista degli utenti attivi in piattaforma dell'ultimo mese</p>
+                    </li>
+                    <li class="list-group-item">
+                      Gennaio:1200
+                    </li>
+                    <li class="list-group-item">
+                      Febbraio:800
+                    </li>
+                    <li class="list-group-item">
+                      Marzo:1500
+                    </li>
+                    <li class="list-group-item p-3">
+                      <a href="#">Visualizza report approfondito</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </main>
-    
-    
+      </div>
+    </div>
+  </main>
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+    integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
